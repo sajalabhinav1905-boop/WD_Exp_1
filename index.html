@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 1 - Git & GitHub Essentials</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="py-5">
+  <div class="container" style="max-width: 860px;">
+    <!-- Header Banner -->
+    <header class="header-banner mb-4">
+      <span class="badge bg-primary mb-2">Experiment 1</span>
+      <h1 class="h2 mb-2">Git Version Control & GitHub Workflow</h1>
+      <p class="text-light opacity-75 mb-0">Fundamental branching, staging, committing, and remote tracking workflows.</p>
+    </header>
+
+    <!-- Workflow Cards -->
+    <div class="card-custom p-4 mb-3">
+      <div class="d-flex align-items-center mb-2">
+        <span class="badge-step me-2">Step 1</span>
+        <h4 class="h5 mb-0">Repository Initialization & Staging</h4>
+      </div>
+      <p class="text-muted small">Prepare your workspace and track initial project files.</p>
+      <ul class="list-unstyled mb-0 ps-2">
+        <li class="py-1"><code>git init</code> &mdash; Initializes a new local git repository.</li>
+        <li class="py-1"><code>git status</code> &mdash; Inspects staged, untracked, and modified files.</li>
+        <li class="py-1"><code>git add .</code> &mdash; Stages all working directory changes for commit.</li>
+        <li class="py-1"><code>git commit -m "feat: initial commit"</code> &mdash; Records snapshots into history.</li>
+      </ul>
+    </div>
+
+    <div class="card-custom p-4 mb-3">
+      <div class="d-flex align-items-center mb-2">
+        <span class="badge-step me-2" style="background-color: #10b981;">Step 2</span>
+        <h4 class="h5 mb-0">Branching & Feature Integration</h4>
+      </div>
+      <p class="text-muted small">Work safely in isolated environments before integrating to production.</p>
+      <ul class="list-unstyled mb-0 ps-2">
+        <li class="py-1"><code>git checkout -b feature/ui</code> &mdash; Creates and switches to a dedicated feature branch.</li>
+        <li class="py-1"><code>git switch main</code> &mdash; Navigates back to the default production branch.</li>
+        <li class="py-1"><code>git merge feature/ui</code> &mdash; Incorporates feature branch commits into main.</li>
+      </ul>
+    </div>
+
+    <div class="card-custom p-4 mb-4">
+      <div class="d-flex align-items-center mb-2">
+        <span class="badge-step me-2" style="background-color: #f59e0b;">Step 3</span>
+        <h4 class="h5 mb-0">Remote Publishing (GitHub)</h4>
+      </div>
+      <p class="text-muted small">Link and synchronize local code with cloud-hosted Git platforms.</p>
+      <ul class="list-unstyled mb-0 ps-2">
+        <li class="py-1"><code>git remote add origin &lt;URL&gt;</code> &mdash; Links your local repository with GitHub.</li>
+        <li class="py-1"><code>git branch -M main</code> &mdash; Sets the primary branch identifier.</li>
+        <li class="py-1"><code>git push -u origin main</code> &mdash; Pushes commits and sets upstream tracking.</li>
+      </ul>
+    </div>
+
+    <footer class="text-center text-muted small">
+      <p>Web Development Lab &bull; Sajal Mishra &bull; JSS University, Noida</p>
+    </footer>
+  </div>
+</body>
+</html>
